@@ -15,7 +15,7 @@ OUT_RESIZE_WIDTH = 2540
 OUT_RESIZE_HEIGHT = 1440
 
 
-def crop_image(image, new_filename):
+def crop_image(image: Image, new_filename: str):
     """Crops the image to the specified dimensions and saves it.
 
     Args:
@@ -40,7 +40,7 @@ def crop_image(image, new_filename):
     new_image.save(f'{new_filename}_cropped.jpg')
 
 
-def resize_image(image, new_filename):
+def resize_image(image: Image, new_filename: str):
     """Resizes the image to the specified dimensions and saves it.
 
     Args:
